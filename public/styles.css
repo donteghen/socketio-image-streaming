@@ -1,0 +1,59 @@
+ /* Safari */
+ @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.loader {
+    border: 30px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 30px solid #3498db;
+    width: 200px;
+    height: 200px;
+    top:35%;
+    left: 35%;
+    position: absolute;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    z-index: 5;
+    overflow: grey 2px;
+  }
+
+  #upload{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px 15px;
+    cursor: pointer;
+    background: palevioletred;
+    color: white;
+    margin: 40px 5px;
+  }
+  #upload:hover{
+    opacity: 0.7;
+  }
+  form{
+    margin: 40px 5px;
+  }
+  
+  #file{
+    padding: 10px 5px;
+    background: palevioletred;
+    color: white;
+  }
+  .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+#send{
+  border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: white;
+}
